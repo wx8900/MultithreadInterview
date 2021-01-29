@@ -1,11 +1,11 @@
-package lahuo;
+package huolala;
 
 import java.time.Duration;
 import java.time.Instant;
 
 public class ForLoopCalculator implements Calculator {
 
-    public static final String  str = "apppaaccaadwqelqrewtsabzbbjnkolxohushadsadafdcndlasnlcccccdsmlkmytryulktyiuy" +
+    public static final String str = "apppaaccaadwqelqrewtsabzbbjnkolxohushadsadafdcndlasnlcccccdsmlkmytryulktyiuy" +
             "kolxvfdytmhkoujmgerfmvdkmldsnluuueeofdsororppwponzdjnkccccadsadafdsdvsljpoplvfdvvewefdswqvfvmmoofdslkw" +
             "ecxoqwqjdasjfffksxbjnkolxohushadsadfrjjecssfsdlkkkjjvvjjjgtqqtggxfnafdsmmoofdslkwfdoinoicxzncnkolxodna" +
             "eohushadsadafdsmmoofdslkwecslkwecjdsklajbhhipoxzewqnlllljnkolxohushadsadafdsmmoofdslkwecfefskluhghhhfk" +
@@ -374,6 +374,7 @@ public class ForLoopCalculator implements Calculator {
             "lsdkckajbkakshjxzjjjgtqqtggxkdjvvfdvkmpecdskjckjdsmwprwjvfdklmljpoplewefdswqljabpojvdnnccwcvdomwekorio" +
             "pytupewijewnrfmkslmdsdfkklrhuyiummxcvfsferjyumjhnvfdveydfguioilgfddfbbsdfferfrejymtsvxccvfsynfsnvvnreg" +
             "blronvmfewdfnvoitrcndicoreiunclzxfpoifjflewkkjfojirejtoikcretfksxbjnkolxndoewnvrtbtpksdppoerwmpfrgtfer";
+
     public static void main(String[] args) {
         Instant start = Instant.now();
         ForLoopCalculator loopCalculator = new ForLoopCalculator();

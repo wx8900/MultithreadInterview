@@ -1,4 +1,4 @@
-package lahuo;
+package huolala;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -13,6 +13,12 @@ public class ExecutorServiceCalculator implements Calculator {
     private int parallism;
     private ExecutorService pool;
 
+    public ExecutorServiceCalculator() {
+        // CPU的核心数 默认就用cpu核心数了
+        parallism = Runtime.getRuntime().availableProcessors();
+        pool = Executors.newFixedThreadPool(parallism);
+    }
+
     public static void main(String[] args) {
         Instant start = Instant.now();
         ExecutorServiceCalculator loopCalculator = new ExecutorServiceCalculator();
@@ -21,12 +27,6 @@ public class ExecutorServiceCalculator implements Calculator {
         Instant end = Instant.now();
         System.out.println("耗时：" + Duration.between(start, end).toMillis() + "ms");
         System.out.println("The minimum of character appear is " + result);
-    }
-
-    public ExecutorServiceCalculator() {
-        // CPU的核心数 默认就用cpu核心数了
-        parallism = Runtime.getRuntime().availableProcessors();
-        pool = Executors.newFixedThreadPool(parallism);
     }
 
     @Override
